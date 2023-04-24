@@ -1,0 +1,47 @@
+img,
+svg {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--font-color, #363030);
+    background-color: var(--background-color, #f4f4f1);
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.3rem;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#root,
+.App {
+    height: 100%;
+}
+
+.App {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.primary-button {
+    background-color: var(--green);
+}
+
+.warning {
+    color: var(--warning);
+}

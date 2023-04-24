@@ -1,0 +1,33 @@
+.audio-form {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--background-color);
+        opacity: 0.75;
+        content: "";
+    }
+
+    .recording-btns,
+    .player {
+        z-index: 1;
+
+        h3 {
+            text-align: center;
+        }
+    }
+
+    .recording-btns button {
+        width: 100px;
+        height: 40px;
+        margin: 0 5px;
+    }
+}

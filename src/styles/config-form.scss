@@ -1,0 +1,86 @@
+.config-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    margin-top: 20px;
+
+    .config-item {
+        display: flex;
+        margin: 10px 0;
+        height: 50px;
+        align-items: center;
+
+        .label {
+            width: 150px;
+            font-weight: bold;
+        }
+
+        .select {
+            width: 250px;
+            height: 40px;
+            font-size: 20px;
+        }
+
+        .key-input {
+            width: 380px;
+            height: 40px;
+            font-size: 18px;
+        }
+
+        .required {
+            color: var(--warning);
+            margin-left: 5px;
+        }
+    }
+
+    .start-btn {
+        width: 150px;
+        height: 40px;
+        background-color: var(--green);
+        color: var(--background-color);
+        border: 1px solid gray;
+        border-radius: 3px;
+        margin-top: 40px;
+        font-size: 20px;
+    }
+
+    @media screen and (min-width: 461px) {
+        height: 100%;
+    }
+
+    @media screen and (max-width: 460px) {
+        .config-item {
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+
+            .label,
+            .select {
+                width: 96%;
+                margin: 0 10px;
+                height: 50px;
+            }
+
+            .label {
+                height: 30px;
+            }
+
+            &.key {
+                flex-direction: row;
+                width: 96%;
+                margin-top: 30px;
+            }
+
+            .key-input {
+                height: 40px;
+
+                .required {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
